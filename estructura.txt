@@ -1,0 +1,114 @@
+Listado de rutas de carpetas
+El número de serie del volumen es 006B0073 1845:9E60
+C:.
+¦   estructura.txt
+¦   package-lock.json
+¦   package.json
+¦   README.md
+¦   
++---controllers
++---img
+¦       draftosaurus_detalle_tirano.webp
+¦       lock.png
+¦       mail.png
+¦       manual.pdf
+¦       name.png
+¦       portada.jpg
+¦       rules1.png
+¦       rules2.png
+¦       rules3.png
+¦       rules4.png
+¦       rules5.png
+¦       rules6.png
+¦       rules7.png
+¦       tablero2.webp
+¦       tablero3.webp
+¦       tableroJuego.jpg
+¦       tableros.webp
+¦       user.png
+¦       
++---models
++---node_modules
+¦   ¦   .package-lock.json
+¦   ¦   
+¦   +---.bin
+¦   ¦       prettier
+¦   ¦       prettier.cmd
+¦   ¦       prettier.ps1
+¦   ¦       
+¦   +---prettier
+¦       ¦   doc.d.ts
+¦       ¦   doc.js
+¦       ¦   doc.mjs
+¦       ¦   index.cjs
+¦       ¦   index.d.ts
+¦       ¦   index.mjs
+¦       ¦   LICENSE
+¦       ¦   package.json
+¦       ¦   README.md
+¦       ¦   standalone.d.ts
+¦       ¦   standalone.js
+¦       ¦   standalone.mjs
+¦       ¦   THIRD-PARTY-NOTICES.md
+¦       ¦   
+¦       +---bin
+¦       ¦       prettier.cjs
+¦       ¦       
+¦       +---internal
+¦       ¦       cli.mjs
+¦       ¦       
+¦       +---plugins
+¦               acorn.d.ts
+¦               acorn.js
+¦               acorn.mjs
+¦               angular.d.ts
+¦               angular.js
+¦               angular.mjs
+¦               babel.d.ts
+¦               babel.js
+¦               babel.mjs
+¦               estree.d.ts
+¦               estree.js
+¦               estree.mjs
+¦               flow.d.ts
+¦               flow.js
+¦               flow.mjs
+¦               glimmer.d.ts
+¦               glimmer.js
+¦               glimmer.mjs
+¦               graphql.d.ts
+¦               graphql.js
+¦               graphql.mjs
+¦               html.d.ts
+¦               html.js
+¦               html.mjs
+¦               markdown.d.ts
+¦               markdown.js
+¦               markdown.mjs
+¦               meriyah.d.ts
+¦               meriyah.js
+¦               meriyah.mjs
+¦               postcss.d.ts
+¦               postcss.js
+¦               postcss.mjs
+¦               typescript.d.ts
+¦               typescript.js
+¦               typescript.mjs
+¦               yaml.d.ts
+¦               yaml.js
+¦               yaml.mjs
+¦               
++---public
+¦   +---css
+¦   ¦       nav.css
+¦   ¦       rules.css
+¦   ¦       
+¦   +---js
++---views
+        game.html
+        index.html
+        navbar.html
+        ourTeam.html
+        ranking.html
+        rules.html
+        
