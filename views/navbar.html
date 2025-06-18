@@ -1,0 +1,218 @@
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="home.html">Inicio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="rules.html">Instructivo</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ranking.html">Ranking</a>
+  </li>
+
+  <!-- Button trigger modal -->
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+      >Registro</a
+    >
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      >Login</a
+    >
+  </li>
+</ul>
+
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Register</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-text" id="visible-addon"
+            ><img src="../img/user.png" style="height: 20px; width: 20px"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            aria-label="Nombre"
+            aria-describedby="visible-addon"
+          />
+          <input
+            type="text"
+            class="form-control d-none"
+            placeholder="Hidden input"
+            aria-label="Hidden input"
+            aria-describedby="visible-addon"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="visible-addon"
+            ><img src="../img/user.png" style="height: 20px; width: 20px"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Apellido"
+            aria-label="Apellido"
+            aria-describedby="visible-addon"
+          />
+          <input
+            type="text"
+            class="form-control d-none"
+            placeholder="Hidden input"
+            aria-label="Hidden input"
+            aria-describedby="visible-addon"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="visible-addon"
+            ><img src="../img/mail.png" style="height: 20px; width: 20px"
+          /></span>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="E-Mail"
+            aria-label="E-mail"
+            aria-describedby="visible-addon"
+          />
+          <input
+            type="text"
+            class="form-control d-none"
+            placeholder="Hidden input"
+            aria-label="Hidden input"
+            aria-describedby="visible-addon"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="visible-addon"
+            ><img src="../img/mail.png" style="height: 20px; width: 20px"
+          /></span>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Confirmar E-Mail"
+            aria-label="Confirmar E-mail"
+            aria-describedby="visible-addon"
+          />
+          <input
+            type="text"
+            class="form-control d-none"
+            placeholder="Hidden input"
+            aria-label="Hidden input"
+            aria-describedby="visible-addon"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="visible-addon"
+            ><img src="../img/lock.png" style="height: 20px; width: 20px"
+          /></span>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            aria-label="Password"
+            aria-describedby="visible-addon"
+          />
+          <input
+            type="text"
+            class="form-control d-none"
+            placeholder="Hidden input"
+            aria-label="Hidden input"
+            aria-describedby="visible-addon"
+          />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+        <button type="button" class="btn btn-primary">Crear</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-text" id="visible-addon"
+            ><img src="../img/user.png" style="height: 20px; width: 20px"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="visible-addon"
+          />
+          <input
+            type="text"
+            class="form-control d-none"
+            placeholder="Hidden input"
+            aria-label="Hidden input"
+            aria-describedby="visible-addon"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="visible-addon"
+            ><img src="../img/lock.png" style="height: 20px; width: 20px"
+          /></span>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            aria-label="Username"
+            aria-describedby="visible-addon"
+          />
+          <input
+            type="text"
+            class="form-control d-none"
+            placeholder="Hidden input"
+            aria-label="Hidden input"
+            aria-describedby="visible-addon"
+          />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
