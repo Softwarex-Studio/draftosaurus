@@ -1,0 +1,50 @@
+#tablero {
+  width: 950px; /* ancho real de la imagen */
+  aspect-ratio: 1/1;
+  background-image: url("img/tableroJuego.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transform-origin: top left;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.zona {
+  position: absolute;
+  border: 2px solid red;
+  background-color: aqua;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#zona1 {
+  top: 10%;
+  left: 10%;
+}
+#zona2 {
+  top: 35%;
+  left: 28%;
+}
+#zona3 {
+  top: 60%;
+  left: 15%;
+}
+#zona4 {
+  top: 75%;
+  left: 45%;
+}
+#zona5 {
+  top: 10%;
+  left: 75%;
+}
+#zona6 {
+  top: 35%;
+  left: 75%;
+}
+#zona7 {
+  top: 60%;
+  left: 75%;
+}

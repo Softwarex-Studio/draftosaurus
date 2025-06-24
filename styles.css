@@ -1,0 +1,49 @@
+:root {
+  --color-primario: #ff7b00;
+  --color-hover: #ffc180;
+  --color-secundario: #1a1a1a;
+  --color-texto-claro: #f5f5f5;
+  --color-borde: #4a2e1f;
+}
+
+.title {
+  color: var(--color-texto-claro);
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 3%;
+  text-align: center;
+}
+
+body {
+  background-color: var(--color-fondo);
+  background-image: url("img/tables.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--color-texto-claro);
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.soyTuPadre {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+#tablero {
+  align-items: center;
+  text-align: center;
+}
