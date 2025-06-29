@@ -1,3 +1,7 @@
+/* Paleta de colores, :root ayuda a crear variables CSS que luego vamos a llamar
+Ejemplo color: var(--color-primario);
+ */
+
 :root {
   --color-primario: #ff7b00;
   --color-hover: #ffc180;
@@ -43,6 +47,24 @@
   margin-top: 40px;
   border-radius: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
   background-color: white;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 5%;
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
 }

@@ -1,84 +1,88 @@
-<!doctype html>
+<!-- Tener en cuenta que los nombres de funciones, variables, y demas deben estar en ingles por buena practica de programacion, y segun el profe, debemos usar kebab-case
+para los nombres de funciones y variables, Ejemplo kebab-case function function-name(){"Codigo de Funcion"}  -->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../public/css/nav.css" />
-  </head>
-  <body>
-    <div id="navbar"></div>
-    <div style="margin-top: 50px">
-      <table
-        class="table table-hover table-bordered border-primary"
-        style="margin: 5%; max-width: 90%"
-      >
-        <thead>
-          <tr>
-            <th scope="col">Posicion</th>
-            <th scope="col">Usuario</th>
-            <th scope="col">Partidas</th>
-            <th scope="col">Victorias</th>
-            <th scope="col">Puntaje</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Marcos</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>John</td>
-            <td>Doe</td>
-            <td>@social</td>
-            <td>@social</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <script>
-      fetch("navbar.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="/Software-x/assets/css/styles.css" />
+  <link rel="stylesheet" href="/Software-x/assets/css/navbar.css" />
+  <script src="/Software-x/scripts/main.js" defer></script>
+
+</head>
+
+<body>
+  <div class="home-container">
+    <div id="navbar"></div>
+    <h1 class="title">Ranking de Jugadores</h1>
+    <table class="table table-hover table-bordered border-primary" style="margin: 5%; max-width: 90%;">
+      <thead>
+        <tr>
+          <th scope="col">Posicion</th>
+          <th scope="col">Usuario</th>
+          <th scope="col">Partidas</th>
+          <th scope="col">Victorias</th>
+          <th scope="col">Puntaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Marcos</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>@fat</td>
+
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>John</td>
+          <td>Doe</td>
+          <td>@social</td>
+          <td>@social</td>
+
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

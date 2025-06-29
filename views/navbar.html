@@ -1,217 +1,135 @@
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="index.html">Inicio</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="rules.html">Instructivo</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="ranking.html">Ranking</a>
-  </li>
+<!-- Tener en cuenta que los nombres de funciones, variables, y demas deben estar en ingles por buena practica de programacion, y segun el profe, debemos usar kebab-case
+para los nombres de funciones y variables, Ejemplo kebab-case function function-name(){"Codigo de Funcion"}  -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="/Software-x/assets/img/rexpng.png" alt="Logo Draftosaurus" class="logo" class="me-2 align-middle">
+      Draftosaurus
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContainer"
+      aria-controls="navContainer" aria-expanded="false" aria-label="Menu de Navegacion" title="Menu de Navegacion">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <!-- Button trigger modal -->
-  <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-      >Registro</a
-    >
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
-      >Login</a
-    >
-  </li>
-</ul>
+    <div class="collapse navbar-collapse justify-content-between" id="navContainer">
 
-<div
-  class="modal fade"
-  id="staticBackdrop"
-  data-bs-backdrop="static"
-  data-bs-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLabel"
-  aria-hidden="true"
->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/Software-x/home.html" title="Ir al Inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Software-x/views/rules.html" title="Ir a Las Reglas de Juego">Reglas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Software-x/views/ranking.html" title="Ver el Top Jugadores">Ranking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalRegistro"
+            title="Registrate para Jugar">Registro</a>
+        </li>
+      </ul>
+      <hr>
+
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin"
+            title="Iniciar Sesion">Iniciar
+            sesión</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal de Registro -->
+<div class="modal fade" id="modalRegistro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="modalRegistroLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Register</h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <h1 class="modal-title fs-5" id="modalRegistroLabel">Registro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body">
-        <div class="input-group">
-          <span class="input-group-text" id="visible-addon"
-            ><img src="../img/user.png" style="height: 20px; width: 20px"
-          /></span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Nombre"
-            aria-label="Nombre"
-            aria-describedby="visible-addon"
-          />
-          <input
-            type="text"
-            class="form-control d-none"
-            placeholder="Hidden input"
-            aria-label="Hidden input"
-            aria-describedby="visible-addon"
-          />
-        </div>
-        <div class="input-group">
-          <span class="input-group-text" id="visible-addon"
-            ><img src="../img/user.png" style="height: 20px; width: 20px"
-          /></span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Apellido"
-            aria-label="Apellido"
-            aria-describedby="visible-addon"
-          />
-          <input
-            type="text"
-            class="form-control d-none"
-            placeholder="Hidden input"
-            aria-label="Hidden input"
-            aria-describedby="visible-addon"
-          />
-        </div>
-        <div class="input-group">
-          <span class="input-group-text" id="visible-addon"
-            ><img src="../img/mail.png" style="height: 20px; width: 20px"
-          /></span>
-          <input
-            type="email"
-            class="form-control"
-            placeholder="E-Mail"
-            aria-label="E-mail"
-            aria-describedby="visible-addon"
-          />
-          <input
-            type="text"
-            class="form-control d-none"
-            placeholder="Hidden input"
-            aria-label="Hidden input"
-            aria-describedby="visible-addon"
-          />
-        </div>
-        <div class="input-group">
-          <span class="input-group-text" id="visible-addon"
-            ><img src="../img/mail.png" style="height: 20px; width: 20px"
-          /></span>
-          <input
-            type="email"
-            class="form-control"
-            placeholder="Confirmar E-Mail"
-            aria-label="Confirmar E-mail"
-            aria-describedby="visible-addon"
-          />
-          <input
-            type="text"
-            class="form-control d-none"
-            placeholder="Hidden input"
-            aria-label="Hidden input"
-            aria-describedby="visible-addon"
-          />
-        </div>
-        <div class="input-group">
-          <span class="input-group-text" id="visible-addon"
-            ><img src="../img/lock.png" style="height: 20px; width: 20px"
-          /></span>
-          <input
-            type="password"
-            class="form-control"
-            placeholder="Password"
-            aria-label="Password"
-            aria-describedby="visible-addon"
-          />
-          <input
-            type="text"
-            class="form-control d-none"
-            placeholder="Hidden input"
-            aria-label="Hidden input"
-            aria-describedby="visible-addon"
-          />
-        </div>
+        <form>
+          <div class="input-group align-items-center mb-2">
+            <span class="input-group-text"><img src="/Software-x/assets/img/user.png" alt="user-icon"
+                class="icons"></span>
+            <label for="nombre" class="visually-hidden">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="input-group align-items-center mb-2">
+            <span class="input-group-text"><img src="/Software-x/assets/img/user.png" alt="user-icon"
+                class="icons"></span>
+            <label for="apellido" class="visually-hidden">Apellido</label>
+            <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido">
+          </div>
+          <div class="input-group align-items-center mb-2">
+            <span class="input-group-text"><img src="/Software-x/assets/img/mail.png" alt="mail-icon"
+                class="icons"></span>
+            <label for="email" class="visually-hidden">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="E-Mail">
+          </div>
+          <div class="input-group align-items-center mb-2">
+            <span class="input-group-text"><img src="/Software-x/assets/img/mail.png" alt="mail-icon"
+                class="icons"></span>
+            <label for="emailConfirm" class="visually-hidden">Confirmar correo electrónico</label>
+            <input type="email" id="emailConfirm" name="emailConfirm" class="form-control"
+              placeholder="Confirmar E-Mail">
+          </div>
+          <div class="input-group align-items-center mb-2">
+            <span class="input-group-text"><img src="/Software-x/assets/img/lock.png" class="icons"
+                alt="password-icon"></span>
+            <label for="password" class="visually-hidden">Contraseña</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña"
+              autocomplete="new-password">
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Cerrar
-        </button>
-        <button type="button" class="btn btn-primary">Crear</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Crear cuenta</button>
       </div>
     </div>
   </div>
 </div>
 
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<!-- Modal de Login -->
+
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
+
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <h1 class="modal-title fs-5" id="modalLoginLabel">Iniciar sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
+
       <div class="modal-body">
-        <div class="input-group">
-          <span class="input-group-text" id="visible-addon"
-            ><img src="../img/user.png" style="height: 20px; width: 20px"
-          /></span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Username"
-            aria-label="Username"
-            aria-describedby="visible-addon"
-          />
-          <input
-            type="text"
-            class="form-control d-none"
-            placeholder="Hidden input"
-            aria-label="Hidden input"
-            aria-describedby="visible-addon"
-          />
-        </div>
-        <div class="input-group">
-          <span class="input-group-text" id="visible-addon"
-            ><img src="../img/lock.png" style="height: 20px; width: 20px"
-          /></span>
-          <input
-            type="password"
-            class="form-control"
-            placeholder="Password"
-            aria-label="Username"
-            aria-describedby="visible-addon"
-          />
-          <input
-            type="text"
-            class="form-control d-none"
-            placeholder="Hidden input"
-            aria-label="Hidden input"
-            aria-describedby="visible-addon"
-          />
-        </div>
+        <form>
+          <div class="input-group align-items-center mb-2">
+            <span class="input-group-text ">
+              <img src="/Software-x/assets/img/user.png" alt="user-icon" class="icons">
+            </span>
+            <label for="usuario" class="visually-hidden">Usuario</label>
+            <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuario">
+          </div>
+
+          <div class="input-group align-items-center mb-2">
+            <span class="input-group-text ">
+              <img src="/Software-x/assets/img/lock.png" alt="password-icon" class="icons">
+            </span>
+            <label for="passwordLogin" class="visually-hidden">Contraseña</label>
+            <input type="password" id="passwordLogin" name="passwordLogin" class="form-control" placeholder="Contraseña"
+              autocomplete="current-password">
+          </div>
+        </form>
       </div>
+
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Cerrar
-        </button>
-        <button type="button" class="btn btn-primary">Login</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Entrar</button>
       </div>
     </div>
   </div>

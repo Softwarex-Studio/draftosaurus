@@ -1,3 +1,7 @@
+/* Paleta de colores, :root ayuda a crear variables CSS que luego vamos a llamar
+Ejemplo color: var(--color-primario);
+ */
+
 :root {
   --color-primario: #ff7b00;
   --color-hover: #ffc180;
@@ -16,7 +20,7 @@
 
 body {
   background-color: var(--color-fondo);
-  background-image: url("img/tables.jpg");
+  background-image: url("/Software-x/assets/img/tables.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -38,7 +42,7 @@ body {
   height: 100vh;
 }
 
-.soyTuPadre {
+.home-container {
   flex: 1 1 auto;
   overflow-y: auto;
 }
