@@ -1,17 +1,10 @@
-/* Tener en cuenta que los nombres de funciones, variables, y demas deben estar en ingles por buena practica de programacion, y segun el profe, debemos usar kebab-case
-para los nombres de funciones y variables, Ejemplo kebab-case function function-name(){"Codigo de Funcion"} */
-
 document.addEventListener("DOMContentLoaded", () => {
   const btnPlay = document.getElementById("btnPlay");
   if (btnPlay) {
-    btnPlay.addEventListener("click", function () {
-      window.location.href = "game.html";
+    btnPlay.addEventListener("click", () => {
+      window.location.href = "/Software-x/views/game.html";
     });
   }
-
-  /* Exportacion de Componentes a los distintos HTML 
-  Este codigo crea una constante de cada componente creado, como la Navbar, el Footer, El carousel.
-  y luego en caso de que esxista un id que haga match con document.getElementById ("nombre"), lo exporta en caso de existir, si no tira un mensaje de error.*/
 
   const fetchElements = [];
 
@@ -39,6 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  if (document.getElementById("game-board")) {
+    fetchElements.push(
+      fetch("/Software-x/views/game-board.html")
+        .then((res) =>
+          res.ok ? res.text() : Promise.reject("Game board not found")
+        )
+        .then((boardData) => {
+          document.getElementById("game-board").innerHTML = boardData;
+        })
+    );
+  }
+
   if (document.getElementById("footer")) {
     fetchElements.push(
       fetch("/Software-x/views/footer.html")
@@ -50,12 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     );
   }
-
   Promise.all(fetchElements)
     .then(() => {
-      console.log("Componentes cargados correctamente");
+      console.log("All components loaded successfully.");
     })
     .catch((error) => {
-      console.error("Error cargando componentes:", error);
+      console.error("Error loading components:", error);
     });
 });

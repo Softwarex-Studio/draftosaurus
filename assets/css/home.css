@@ -2,17 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* pantalla completa */
-  background-image: url("img/fondo-madera.jpg"); /* si tenés fondo */
+  height: 100vh;
+  background-image: url("img/fondo-madera.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .btn-Play {
-  background-color: var(
-    --color-primario,
-    #ff6a00
-  ); /* usa variable si existe, si no, fallback */
+  background-color: var(--color-primario, #ff6a00);
   color: white;
   font-weight: bold;
   padding: 1rem 2rem;

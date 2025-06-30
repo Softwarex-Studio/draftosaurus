@@ -1,7 +1,7 @@
 #tablero {
-  width: 950px; /* ancho real de la imagen */
+  width: 950px;
   aspect-ratio: 1/1;
-  background-image: url("img/tableroJuego.jpg");
+  background-image: url("../img/tableroJuego.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
