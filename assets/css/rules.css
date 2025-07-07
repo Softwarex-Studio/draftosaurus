@@ -1,3 +1,72 @@
+/* Paleta de colores, :root ayuda a crear variables CSS que luego vamos a llamar
+Ejemplo color: var(--color-primario);
+ */
+
 .rules {
-    margin-top: 60px;
+  max-width: 900px;
+  width: 80vw;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 40px auto;
+}
+
+#video {
+  max-width: 920px;
+  width: 80vw;
+  margin: 40px auto;
+}
+
+#video .ratio {
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.index {
+  max-width: 900px;
+  width: 80vw;
+  margin: 40px auto;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.index ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.index a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.index a:hover {
+  color: var(--color-hover);
+}
+
+.index .accordion-button {
+  padding-left: 40px;
+  color: white;
+  font-weight: bold;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.index .accordion-button:hover {
+  background-color: var(--color-hover);
+}
+
+.index aria-controls {
+  color: white;
+}
+
+/* Esto hace que la flechita del acordio del indice se vea blanca */
+.index .accordion-button::after {
+  filter: brightness(0) invert(1);
 }

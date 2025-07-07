@@ -4,7 +4,7 @@ Ejemplo color: var(--color-primario);
 
 :root {
   --color-primario: #ff7b00;
-  --color-hover: #ffc180;
+  --color-hover: #ffcc00;
   --color-secundario: #1a1a1a;
   --color-texto-claro: #f5f5f5;
   --color-borde: #4a2e1f;
@@ -41,13 +41,6 @@ Ejemplo color: var(--color-primario);
 
 .btn-naranja:hover {
   background-color: var(--color-hover);
-}
-
-.rules {
-  margin-top: 40px;
-  border-radius: 50px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  background-color: white;
 }
 
 .icons {

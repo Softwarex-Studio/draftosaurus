@@ -1,0 +1,29 @@
+.ranking {
+  width: 70%;
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ranking thead th {
+  background-color: var(--color-primario);
+  color: var(--color-texto-claro);
+  text-align: center;
+}
+
+.ranking tbody td,
+.ranking tbody th {
+  text-align: center;
+  vertical-align: middle;
+  transition: background-color 0.3s ease;
+}
+
+.ranking tbody tr:hover > td,
+.ranking tbody tr:hover > th {
+  background-color: var(--color-hover, #d1e7dd);
+  transition: background-color 0.3s ease;
+
+  cursor: pointer;
+  font-weight: bold;
+}
