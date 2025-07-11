@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  /* fetchElements es un array vacio donde vamos a pushear las promesas de fetch
+  que se encargan de cargar los componentes del sitio web.
+  Si el elemento con el id navbar existe, se hace un fetch a navbar.html
+  Si alguno de los fetch falla, se rechaza la promesa y se muestra un mensaje de error en la consola.
+  y se actualizan los elementos del DOM con el contenido de los archivos HTML correspondientes. */
+
   const fetchElements = [];
 
   if (document.getElementById("navbar")) {

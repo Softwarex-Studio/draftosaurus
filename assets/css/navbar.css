@@ -2,14 +2,6 @@
 Ejemplo color: var(--color-primario);
  */
 
-:root {
-  --color-primario: #ff7b00;
-  --color-hover: #ffcc00;
-  --color-secundario: #1a1a1a;
-  --color-texto-claro: #f5f5f5;
-  --color-borde: #4a2e1f;
-}
-
 .navbar {
   background-color: var(--color-secundario);
 }
