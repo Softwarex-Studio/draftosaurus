@@ -17,8 +17,11 @@ Ejemplo color: var(--color-primario);
   text-decoration: underline;
 }
 
-.navbar a {
+.navbar-nav .nav-link {
   color: var(--color-texto-claro);
+  font-weight: bold;
+  margin: 0 10px;
+  white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -44,7 +47,7 @@ Ejemplo color: var(--color-primario);
 .logo {
   width: 40px;
   height: 40px;
-  margin-right: 5%;
+  object-fit: contain;
 }
 
 .input-group-text {

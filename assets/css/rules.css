@@ -40,7 +40,7 @@ Ejemplo color: var(--color-primario);
 
 .index a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -51,7 +51,7 @@ Ejemplo color: var(--color-primario);
 
 .index .accordion-button {
   padding-left: 40px;
-  color: white;
+  color: black;
   font-weight: bold;
   transition:
     color 0.3s ease,
@@ -59,14 +59,15 @@ Ejemplo color: var(--color-primario);
 }
 
 .index .accordion-button:hover {
-  background-color: var(--color-hover);
-}
-
-.index aria-controls {
+  background-color: black;
   color: white;
 }
 
+/* .index aria-controls {
+  color: green;
+} */
+
 /* Esto hace que la flechita del acordio del indice se vea blanca */
-.index .accordion-button::after {
+/* .index .accordion-button::after {
   filter: brightness(0) invert(1);
-}
+} */

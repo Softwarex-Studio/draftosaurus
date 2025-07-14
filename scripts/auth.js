@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const users = [
-    { username: "user", password: "user1234", rol: "user" },
-    { username: "admin", password: "admin1234", rol: "admin" },
+    { username: "Nacho", password: "nacho1234", rol: "admin" },
+    { username: "Marcos", password: "marcos1234", rol: "admin" },
+    { username: "Marcel", password: "marcel1234", rol: "admin" },
+    { username: "Profe", password: "profe1234", rol: "user" },
   ];
 
   const loginbtn = document.querySelector(".modal-footer .btn.btn-primary");
@@ -12,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const isLogged = sessionStorage.getItem("Usuario Logueado");
   if (isLogged) {
     playbutton();
+    updateWelcome(sessionStorage.getItem("Username"));
   }
 
   loginbtn.addEventListener("click", () => {
@@ -27,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sessionStorage.setItem("Rol", userLogged.rol);
 
       playbutton();
+      updateWelcome(userLogged.username);
 
       const modal = bootstrap.Modal.getInstance(
         document.getElementById("modalLogin")
@@ -43,7 +47,15 @@ document.addEventListener("DOMContentLoaded", () => {
     sesionbtn.removeAttribute("data-bs-target");
 
     sesionbtn.onclick = () => {
-      window.location.href = "/Software-x/views/game.html";
+      window.location.href = "views/game.html";
     };
+  }
+
+  function updateWelcome(username) {
+    const welcomeText = document.getElementById("welcome");
+    if (welcomeText) {
+      welcomeText.textContent = `Bienvenido ${username}`;
+      welcomeText.classList.remove("d-none");
+    }
   }
 });
