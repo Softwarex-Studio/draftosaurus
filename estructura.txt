@@ -1,0 +1,159 @@
+Listado de rutas de carpetas
+El número de serie del volumen es 1845-9E60
+C:.
+¦   estructura.txt
+¦   index.html
+¦   package-lock.json
+¦   package.json
+¦   README.md
+¦   settings.json
+¦   
++---assets
+¦   +---css
+¦   ¦       carousel.css
+¦   ¦       footer.css
+¦   ¦       game-board.css
+¦   ¦       home.css
+¦   ¦       navbar.css
+¦   ¦       ranking.css
+¦   ¦       rules.css
+¦   ¦       styles.css
+¦   ¦       
+¦   +---img
+¦           2d-blue.PNG
+¦           2d-green.PNG
+¦           2d-orange.PNG
+¦           2d-pink.png
+¦           2d-red.PNG
+¦           2d-yellow.PNG
+¦           3d-blue1.PNG
+¦           3d-blue2.PNG
+¦           3d-green1.png
+¦           3d-green2.png
+¦           3d-orange1.PNG
+¦           3d-orange2.PNG
+¦           3d-pink1.PNG
+¦           3d-pink2.PNG
+¦           3d-red1.png
+¦           3d-red2.png
+¦           3d-yellow1.PNG
+¦           3d-yellow2.PNG
+¦           blue.PNG
+¦           carousel1.jpg
+¦           carousel2.jpg
+¦           carousel3.webp
+¦           carousel4.jpg
+¦           dice1.png
+¦           dice2.png
+¦           dice3.png
+¦           dice4.png
+¦           dice5.png
+¦           dice6.png
+¦           dino.png
+¦           draftosaurus_detalle_tirano.webp
+¦           lock.png
+¦           mail.png
+¦           manual.pdf
+¦           name.png
+¦           portada.jpg
+¦           reglamento.png
+¦           rexpng.png
+¦           rules1.png
+¦           rules2.png
+¦           rules3.png
+¦           rules4.png
+¦           rules5.png
+¦           rules6.png
+¦           rules7.png
+¦           tablero2.webp
+¦           tablero3.webp
+¦           tableroJuego.jpg
+¦           tableros.webp
+¦           tables.jpg
+¦           user.png
+¦           
++---controllers
++---models
++---node_modules
+¦   ¦   .package-lock.json
+¦   ¦   
+¦   +---.bin
+¦   ¦       prettier
+¦   ¦       prettier.cmd
+¦   ¦       prettier.ps1
+¦   ¦       
+¦   +---prettier
+¦       ¦   doc.d.ts
+¦       ¦   doc.js
+¦       ¦   doc.mjs
+¦       ¦   index.cjs
+¦       ¦   index.d.ts
+¦       ¦   index.mjs
+¦       ¦   LICENSE
+¦       ¦   package.json
+¦       ¦   README.md
+¦       ¦   standalone.d.ts
+¦       ¦   standalone.js
+¦       ¦   standalone.mjs
+¦       ¦   THIRD-PARTY-NOTICES.md
+¦       ¦   
+¦       +---bin
+¦       ¦       prettier.cjs
+¦       ¦       
+¦       +---internal
+¦       ¦       cli.mjs
+¦       ¦       
+¦       +---plugins
+¦               acorn.d.ts
+¦               acorn.js
+¦               acorn.mjs
+¦               angular.d.ts
+¦               angular.js
+¦               angular.mjs
+¦               babel.d.ts
+¦               babel.js
+¦               babel.mjs
+¦               estree.d.ts
+¦               estree.js
+¦               estree.mjs
+¦               flow.d.ts
+¦               flow.js
+¦               flow.mjs
+¦               glimmer.d.ts
+¦               glimmer.js
+¦               glimmer.mjs
+¦               graphql.d.ts
+¦               graphql.js
+¦               graphql.mjs
+¦               html.d.ts
+¦               html.js
+¦               html.mjs
+¦               markdown.d.ts
+¦               markdown.js
+¦               markdown.mjs
+¦               meriyah.d.ts
+¦               meriyah.js
+¦               meriyah.mjs
+¦               postcss.d.ts
+¦               postcss.js
+¦               postcss.mjs
+¦               typescript.d.ts
+¦               typescript.js
+¦               typescript.mjs
+¦               yaml.d.ts
+¦               yaml.js
+¦               yaml.mjs
+¦               
++---scripts
+¦       auth.js
+¦       main.js
+¦       
++---views
+        carousel.html
+        footer.html
+        game-board.html
+        game.html
+        navbar.html
+        ranking.html
+        rules.html
+        

@@ -3,11 +3,33 @@ Ejemplo color: var(--color-primario);
  */
 
 :root {
-  --color-primario: #ff7b00;
-  --color-hover: #ffcc00;
-  --color-secundario: #1a1a1a;
-  --color-texto-claro: #f5f5f5;
-  --color-borde: #4a2e1f;
+  --color-primario: #2d2d2d;
+  --color-secundario: #404040;
+  --color-terciario: #f5f5f5;
+  --color-hover: #ff6b00;
+  --color-hover-2: #ff8533;
+  --color-claro: #f5f5f5;
+  --color-verde: #00ff88;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(
+    135deg,
+    var(--color-primario) 0%,
+    var(--color-secundario) 50%,
+    var(--color-terciario) 100%
+  );
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: var(--color-texto-claro);
 }
 
 .title {
@@ -16,16 +38,6 @@ Ejemplo color: var(--color-primario);
   font-weight: bold;
   margin-top: 3%;
   text-align: center;
-}
-
-body {
-  background-color: var(--color-fondo);
-  background-image: url("/Software-x/assets/img/tables.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  color: var(--color-texto-claro);
-  font-family: "Roboto", sans-serif;
 }
 
 html,
