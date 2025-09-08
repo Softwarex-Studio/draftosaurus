@@ -1,34 +1,32 @@
-<!-- Tener en cuenta que los nombres de funciones, variables, y demas deben estar en ingles por buena practica de programacion, y segun el profe, debemos usar kebab-case
-para los nombres de funciones y variables, Ejemplo kebab-case function function-name(){"Codigo de Funcion"}  -->
 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators coin-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+            <img src="<?= $router->asset('assets/img/carousel1.jpg') ?>" class="d-block w-100" alt="Carousel 1">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Un juego para toda la familia</h5>
-                <p>Diviertete con nuestros dinosaurios, y debora a tus amigos.</p>
+                <p>Diviértete con nuestros dinosaurios y devora a tus amigos.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+            <img src="<?= $router->asset('assets/img/carousel2.jpg') ?>" class="d-block w-100" alt="Carousel 2">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Dos Modos de Juego</h5>
-                <p>Elige entre el tablero de verano, o el de invierno, para jugar con tus amigos.</p>
+                <p>Elige entre el tablero de verano o el de invierno para jugar con tus amigos.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="assets/img/carousel3.webp" class="d-block w-100" alt="...">
+            <img src="<?= $router->asset('assets/img/carousel3.webp') ?>" class="d-block w-100" alt="Carousel 3">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Diversion Asegurada</h5>
-                <p>Registrate, y compite en el ranking, para saber quien es un verdadero T-REX.</p>
+                <h5>Diversión Asegurada</h5>
+                <p>Regístrate y compite en el ranking para saber quién es un verdadero T-REX.</p>
             </div>
         </div>
     </div>
