@@ -20,7 +20,7 @@ class RankingController {
         ]);
     }
 
-    // Para obtener los jugadores sin renderizar (opcional)
+    // Para obtener los jugadores sin renderizar nada
     public function getPlayers() {
         return $this->model->getRanking();
     }

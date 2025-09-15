@@ -1,3 +1,5 @@
+/*Falta dividir parte del css a sus respectivos lugares, se hara para la 3 entrega*/
+
 :root {
   --black: #000000;
   --dark-black: #1a1a1a;
@@ -10,7 +12,6 @@
   --text-gray: #f5f5f5;
 }
 
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +34,7 @@ body {
   min-height: 100vh;
 }
 
-/* Fondo decorativo */
+/* Fondo */
 body::before {
   content: "";
   position: fixed;
@@ -125,12 +126,10 @@ body::before {
 
 /* Main Content */
 .main-content {
-  min-height: calc(
-    100vh - 200px
-  ); /* Altura ideal, ocupa toda la pantalla menos navbar/footer */
+  min-height: calc(100vh - 200px);
   display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  justify-content: center;
   padding: 3rem 0;
 }
 
@@ -329,5 +328,5 @@ body::before {
 }
 
 .hero-section .col-lg-6 {
-  height: 100%; /* Para que cada columna ocupe todo el alto de hero */
+  height: 100%;
 }

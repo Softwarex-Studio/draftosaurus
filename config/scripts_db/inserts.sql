@@ -1,11 +1,11 @@
 USE draftosaurus_db;
 
-INSERT INTO Users (first_name, last_name, email, password_hash, active, is_admin) VALUES
-('Marcos', 'Sierra', 'marcos.sierra@gmail.com', 'bcrypt_placeholder', TRUE, TRUE),
-('Nacho', 'Alonso', 'nacho.alonso@gmail.com', 'bcrypt_placeholder', TRUE, FALSE),
-('Marcel', 'Barrios', 'marcel.barrios@gmail.com', 'bcrypt_placeholder', TRUE, FALSE),
-('Gabriel', 'Barboza', 'gabriel.barboza@gmail.com', 'bcrypt_placeholder', TRUE, FALSE),
-('Luis', 'Fagundez', 'luis.fagundez@gmail.com', 'bcrypt_placeholder', TRUE, FALSE);
+INSERT INTO Users (nickname, first_name, last_name, email, password_hash, active, is_admin) VALUES
+('D4RKK1LL', 'Marcos', 'Sierra', 'marcos.sierra@gmail.com', 'marcos1234', TRUE, TRUE),
+('nacho', 'Nacho', 'Alonso', 'nacho.alonso@gmail.com', 'nacho1234', FALSE, FALSE),
+('marcel', 'Marcel', 'Barrios', 'marcel.barrios@gmail.com', 'papitas1234', FALSE, FALSE),
+('gabriel', 'Gabriel', 'Barboza', 'gabriel.barboza@gmail.com', 'gabi1234', FALSE, FALSE),
+('luis', 'Luis', 'Fagundez', 'luis.fagundez@gmail.com', 'luis1234', FALSE, FALSE);
 
 INSERT INTO Games (date_played, winner_id) VALUES
 (CURDATE(), NULL),
@@ -13,8 +13,6 @@ INSERT INTO Games (date_played, winner_id) VALUES
 (DATE_SUB(CURDATE(), INTERVAL 2 DAY), NULL);
 
 -- Insertar jugadores por partida con puntaje inicial 0
--- Partida 1
-USE draftosaurus_db;
 
 -- Partida 1
 INSERT INTO GamePlayers (game_id, user_id, score) VALUES

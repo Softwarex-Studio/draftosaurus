@@ -15,7 +15,7 @@
         <div class="zona" id="zona7">zona7</div>
     </div>
 
-    <!-- Barra inferior con fichas y botones -->
+    <!-- Barra de abajo con fichas y botones -->
     <div id="downbar">
         <div id="barra-completa">
             <div id="fichas" class="barra">
